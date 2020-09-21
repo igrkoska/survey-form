@@ -11,9 +11,9 @@ body {
 }
 .container {
 	margin: 60px auto;
-	margin-left: 165px;
-	width: 100%;
-	background: #fff;
+	width: 680px;
+	margin-left: 125px;
+	background-color: #fff;
 	font-family: 'Inconsolata', monospace;
 	color: #222;
 }
@@ -27,7 +27,8 @@ header {
 h1#title {
 	text-align: center;
 	padding-top: 30px;
-	margin-bottom: 0;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 p#description {
 	text-align: center;
@@ -102,18 +103,44 @@ input[type=submit] {
 	border-radius: 5px;
 	cursor: pointer;
 }
-@media (min-width: 768px) {
+@media screen and (max-width: 896px) {
 	.container {
-		max-width: 650px;
+		width: 600px;
+		margin-left: 100px;
 	}
 }
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 768px) {
 	.container {
-		max-width: 550px;
+		width: 520px;
+		margin-left: 85px;
+	}
+	#title {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 16px;
 	}
 }
-@media (min-width: 430px) and (max-width: 575px) {
+@media (max-width: 639px) {
 	.container {
-		max-width: 450px;
+		width: 450px;
+		margin-left: 70px;
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		width: 370px;
+		margin-left: 55px;
+	}
+	p {
+		font-size: 14px;
+	}
+	label {
+		font-size: 14px;
+	}
+}
+@media (max-width: 575px) {
+	.container {
+		margin-left: 50px;
 	}
 }
